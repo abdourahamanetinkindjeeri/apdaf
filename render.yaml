@@ -3,7 +3,8 @@ services:
     name: appdaf
     env: docker
     plan: free
-    dockerfilePath: ./appdaf/Dockerfile
+    rootDir: appdaf # ← indique à Render de travailler dans appdaf/
+    dockerfilePath: Dockerfile # Dockerfile est maintenant cherché dans app
     envVars:
       - key: DB_HOST
         value: dpg-d1vvb7qli9vc73ftj0-a.render.com
