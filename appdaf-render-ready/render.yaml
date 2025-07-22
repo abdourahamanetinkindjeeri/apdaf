@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: appdaf
+    env: docker
+    plan: free
+    dockerfilePath: ./appdaf/Dockerfile
+    envVars:
+      - key: DB_HOST
+        value: dpg-d1vvb7qli9vc73ftj0-a.render.com
+      - key: DB_PORT
+        value: 5432
+      - key: DB_NAME
+        value: app_daf
+      - key: DB_USER
+        value: appdaf
+      - key: DB_PASSWORD
+        value: MIaKpxRMCGR0PRV19EH0BdMy98mtVEZD
